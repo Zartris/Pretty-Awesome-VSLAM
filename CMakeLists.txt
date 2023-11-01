@@ -29,7 +29,7 @@ add_library(${PROJECT_NAME} SHARED
 #     # ${PROJECT_SOURCE_DIR}/Thirdparty/g2o/lib/libg2o.so
 # )
 
-add_executable(MyVSLAM main.cpp)
+add_executable(MyVSLAM main.cpp ${SOURCES})
 
 # Link libraries
-# target_link_libraries(Pretty-Awesome-VSLAM <library_name>)
+target_link_libraries(MyVSLAM ${PROJECT_NAME})
